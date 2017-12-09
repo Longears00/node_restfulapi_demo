@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/Longears00/node_restfulapi_demo#readme",
   "devDependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.5"
   }
 }
