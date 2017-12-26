@@ -27,6 +27,7 @@ exports.test = function (req, res) {
 };
 
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));
 
 //extend : false not allow pass rich body params
 app.use(bodyParser.urlencoded({ extended: true }));
