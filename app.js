@@ -22,6 +22,7 @@ db.on('error', (err)=> {
 
 const productsRouter = require('./api/routes/products');
 const orderRouter = require('./api/routes/order');
+const userRouter = require('./api/routes/user');
 exports.test = function (req, res) {
   res.render('test');
 };
@@ -49,6 +50,7 @@ app.use((req, res, next)=> {
 //middleware products
 app.use('/products', productsRouter);
 app.use('/order', orderRouter);
+app.use('/user', userRouter);
 
 app.use((req, res, next) => {
   const error = new Error('not found');
